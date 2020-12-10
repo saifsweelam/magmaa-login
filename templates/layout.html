@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+
+<body>
+    <div id="content" class="d-flex justify-content-center align-items-center">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div id="footer" class="text-white text-center py-2">
+        <div class="container">
+            All rights reserved to <a href="https://saifsweelam">Seif El-Din Sweilam</a> - MAGMAA&copy;
+        </div>
+    </div>
+
+    <div id="footage"></div>
+</body>
+
+</html>

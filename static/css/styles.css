@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Indie+Flower&display=swap');
+
+html {
+    font-size: 11px;
+}
+
+@media screen and (min-width: 100px) {
+    html {
+        font-size: calc(11px + 6 * ((100vw - 100px) / 680));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+#content {
+    min-height: 95vh;
+}
+
+#content #landing #headline {
+    font-family: 'Indie Flower', sans-serif;
+}
+
+#content #formContainer {
+    background-color: #FFF9;
+    min-height: 10vh;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 991px) {
+    #content #formContainer {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+#footer {
+    min-height: 5vh;
+    background: linear-gradient(180deg, #FFF0 30%, #000 70%);
+}
+
+#footage {
+    z-index: -999999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url('../img/footage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

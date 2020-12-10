@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block title %}Welcome to MAGMAA{% endblock %}
+{% block content %}
+<div class="container">
+    <div id="landing" class="text-center text-white">
+        <div id="headline" class="display-1">
+            Welcome, {{session['profile']['name']}}
+        </div>
+        <div>Your Email is {{session['profile']['email']}}</div>
+        <div>Your Phone is {{session['profile']['phone']}}</div>
+        <div class="p-3">
+            <a href="{{url_for('logout')}}" class="btn btn-dark btn-lg">Log Out</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

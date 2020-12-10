@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block title %}Welcome to MAGMAA{% endblock %}
+{% block content %}
+<div class="container">
+    <div id="landing" class="text-center text-white">
+        <div id="headline" class="display-1">
+            Welcome to MAGMAA
+        </div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae dicta, esse magnam possimus maxime porro?</div>
+        <div class="p-3">
+            <a href="{{url_for('get_register_form')}}" class="btn btn-light btn-lg">Register Now</a>
+            <a href="{{url_for('get_login_form')}}" class="btn btn-dark btn-lg">Login</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
